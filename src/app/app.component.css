@@ -1,0 +1,46 @@
+html {
+  scroll-behavior: smooth;
+  background: #1a1a1a;
+  /* Ensure the entire page has a dark background */
+  height: 100%;
+}
+
+body {
+  background: #1a1a1a;
+  /* Match the hero section */
+  color: #fff;
+  margin: 0;
+  /* Remove default margin */
+  min-height: 100vh;
+}
+
+.navbar {
+  background: rgba(26, 26, 26, 0.9);
+  padding: 1rem 0;
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #fff !important;
+}
+
+.nav-link {
+  color: #fff;
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover,
+.nav-link.active {
+  color: #f4c430;
+  /* Yellow on hover/active */
+}
+
+section {
+  min-height: 100vh;
+  padding: 5rem 0;
+  position: relative;
+  /* Ensure sections are positioned correctly */
+}
