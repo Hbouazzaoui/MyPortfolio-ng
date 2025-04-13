@@ -1,0 +1,88 @@
+.services-section {
+  background: #1a1a1a;
+  padding: 5rem 0;
+  color: #fff;
+}
+
+.heading-section {
+  position: relative;
+}
+
+.heading-section h2 {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #fff;
+  line-height: 1.2;
+}
+
+.service-card {
+  background: #2a5a50;
+  padding: 2rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  width: 100%;
+  max-width: 350px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+.service-card .icon {
+  display: inline-block;
+  margin-bottom: 1.5rem;
+}
+
+.service-card .icon i {
+  font-size: 3rem;
+  color: #28b463;
+  transition: color 0.3s ease;
+}
+
+.service-card:hover .icon i {
+  color: #fff;
+}
+
+.service-card h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #fff;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+
+.service-card p {
+  font-size: 1rem;
+  color: #d1d5db;
+  line-height: 1.6;
+}
+
+@media (max-width: 992px) {
+  .heading-section h2 {
+    font-size: 2.5rem;
+  }
+
+  .service-card {
+    max-width: 300px;
+  }
+}
+
+@media (max-width: 576px) {
+  .heading-section h2 {
+    font-size: 2rem;
+  }
+
+  .service-card h3 {
+    font-size: 1.3rem;
+  }
+
+  .service-card .icon i {
+    font-size: 2.5rem;
+  }
+
+  .service-card p {
+    font-size: 0.9rem;
+  }
+}

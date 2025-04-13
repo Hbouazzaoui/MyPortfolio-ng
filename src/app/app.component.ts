@@ -4,6 +4,7 @@ import { FooterComponent } from './footer/footer.component';
 import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
 import { ResumeComponent } from './resume/resume.component';
+// import { ServiceComponent } from './service/service.component';
 import { SkillsComponent } from './skills/skills.component';
 import { ProjectComponent } from './project/project.component';
 import { ContactComponent } from './contact/contact.component';
@@ -18,6 +19,7 @@ import { ReactiveFormsModule } from '@angular/forms'; // For contact form
     HomeComponent,
     AboutComponent,
     ResumeComponent,
+    // ServiceComponent,
     SkillsComponent,
     ProjectComponent,
     ContactComponent,

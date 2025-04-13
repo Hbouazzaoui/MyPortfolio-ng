@@ -1,46 +1,114 @@
-html {
-  scroll-behavior: smooth;
-  background: #1a1a1a;
-  /* Ensure the entire page has a dark background */
-  height: 100%;
-}
-
-body {
-  background: #1a1a1a;
-  /* Match the hero section */
+.skills-section {
+  background: #1a3c34;
+  padding: 3rem 0;
   color: #fff;
-  margin: 0;
-  /* Remove default margin */
   min-height: 100vh;
 }
 
-.navbar {
-  background: rgba(26, 26, 26, 0.9);
-  padding: 1rem 0;
+.heading-section {
+  position: relative;
 }
 
-.navbar-brand {
-  font-size: 1.5rem;
+.big {
+  position: absolute;
+  top: -3rem;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 6rem;
+  font-weight: 900;
+  color: rgba(255, 255, 255, 0.1);
+  z-index: 0;
+}
+
+h2 {
+  font-size: 2.5rem;
   font-weight: 700;
-  color: #fff !important;
+  color: #fff;
+  position: relative;
+  z-index: 1;
 }
 
-.nav-link {
-  color: #fff;
-  font-weight: 500;
-  padding: 0.5rem 1rem;
+.heading-section p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #d1d5db;
+}
+
+.category-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #28b463;
+  margin-bottom: 1.5rem;
+}
+
+.skill-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+  padding: 0.5rem 0;
+  transition: transform 0.3s ease;
+}
+
+.skill-item:hover {
+  transform: translateX(10px);
+}
+
+.skill-icon {
+  font-size: 1.5rem;
+  color: #28b463;
+  margin-right: 1rem;
   transition: color 0.3s ease;
 }
 
-.nav-link:hover,
-.nav-link.active {
-  color: #f4c430;
-  /* Yellow on hover/active */
+.skill-item:hover .skill-icon {
+  color: #fff;
 }
 
-section {
-  min-height: 100vh;
-  padding: 5rem 0;
-  position: relative;
-  /* Ensure sections are positioned correctly */
+.skill-item h4 {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #fff;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .big {
+    font-size: 4rem;
+    top: -2rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  .category-title {
+    font-size: 1.3rem;
+  }
+
+  .skill-item h4 {
+    font-size: 1.1rem;
+  }
+
+  .skill-icon {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 576px) {
+  h2 {
+    font-size: 1.8rem;
+  }
+
+  .category-title {
+    font-size: 1.2rem;
+  }
+
+  .skill-item h4 {
+    font-size: 1rem;
+  }
+
+  .skill-icon {
+    font-size: 1.2rem;
+    margin-right: 0.8rem;
+  }
 }

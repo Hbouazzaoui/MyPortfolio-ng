@@ -1,1 +1,159 @@
-<p>contact works!</p>
+<section class="contact-section" id="contact">
+  <div class="container">
+    <div class="row justify-content-center mb-5">
+      <div class="col-lg-8 text-center">
+        <h1 class="big-title">Contact</h1>
+        <h2 class="section-title mb-4">Get In Touch</h2>
+        <p class="lead">
+          Passionate developer skilled in C, Java, HTML, CSS, JavaScript, and
+          JEE, dedicated to creating innovative and efficient web solutions.
+        </p>
+      </div>
+    </div>
+
+    <div class="row g-4 mb-5">
+      <!-- Contact Info Cards -->
+      <div class="col-md-6 col-lg-3" data-aos="fade-up">
+        <div class="contact-card h-100">
+          <div class="contact-icon">
+            <i class="fas fa-map-marker-alt"></i>
+          </div>
+          <h3>Address</h3>
+          <p>Beni Mellal, Khenifra, Khouribga, Morocco</p>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="100">
+        <div class="contact-card h-100">
+          <div class="contact-icon">
+            <i class="fas fa-phone-alt"></i>
+          </div>
+          <h3>Phone</h3>
+          <p><a href="tel:+212676022445">+212 676 0224 45</a></p>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="200">
+        <div class="contact-card h-100">
+          <div class="contact-icon">
+            <i class="fab fa-linkedin"></i>
+          </div>
+          <h3>LinkedIn</h3>
+          <p>
+            <a href="https://www.linkedin.com/in/hbouazzaoui" target="_blank"
+              >View My Profile</a
+            >
+          </p>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="300">
+        <div class="contact-card h-100">
+          <div class="contact-icon">
+            <i class="fab fa-github"></i>
+          </div>
+          <h3>GitHub</h3>
+          <p>
+            <a href="https://github.com/Hbouazzaoui" target="_blank"
+              >Hbouazzaoui</a
+            >
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="row g-5">
+      <!-- Contact Form -->
+      <div class="col-lg-6 order-lg-2" data-aos="fade-left">
+        <div class="contact-form-wrap">
+          <h3 class="mb-4">Send Me a Message</h3>
+          <form [formGroup]="contactForm" (ngSubmit)="onSubmit()" class="contact-form">
+            <div class="mb-3">
+              <input
+                type="text"
+                class="form-control"
+                formControlName="name"
+                [ngClass]="{ 'is-invalid': submitted && f['name'].errors }"
+                placeholder="Your Name"
+              />
+              <div *ngIf="submitted && f['name'].errors" class="invalid-feedback">
+                <div *ngIf="f['name'].errors['required']">Name is required</div>
+                <div *ngIf="f['name'].errors['minlength']">
+                  Name must be at least 3 characters
+                </div>
+              </div>
+            </div>
+
+            <div class="mb-3">
+              <input
+                type="email"
+                class="form-control"
+                formControlName="email"
+                [ngClass]="{ 'is-invalid': submitted && f['email'].errors }"
+                placeholder="Your Email"
+              />
+              <div *ngIf="submitted && f['email'].errors" class="invalid-feedback">
+                <div *ngIf="f['email'].errors['required']">Email is required</div>
+                <div *ngIf="f['email'].errors['email']">
+                  Please enter a valid email
+                </div>
+              </div>
+            </div>
+
+            <div class="mb-3">
+              <input
+                type="text"
+                class="form-control"
+                formControlName="subject"
+                [ngClass]="{ 'is-invalid': submitted && f['subject'].errors }"
+                placeholder="Subject"
+              />
+              <div *ngIf="submitted && f['subject'].errors" class="invalid-feedback">
+                <div *ngIf="f['subject'].errors['required']">Subject is required</div>
+              </div>
+            </div>
+
+            <div class="mb-3">
+              <textarea
+                class="form-control"
+                rows="5"
+                formControlName="message"
+                [ngClass]="{ 'is-invalid': submitted && f['message'].errors }"
+                placeholder="Your Message"
+              ></textarea>
+              <div *ngIf="submitted && f['message'].errors" class="invalid-feedback">
+                <div *ngIf="f['message'].errors['required']">Message is required</div>
+                <div *ngIf="f['message'].errors['minlength']">
+                  Message must be at least 10 characters
+                </div>
+              </div>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-send" [disabled]="loading">
+              Send Message
+              <span *ngIf="loading" class="spinner-border spinner-border-sm"></span>
+              <i *ngIf="!loading" class="fas fa-paper-plane ms-2"></i>
+            </button>
+
+            <div *ngIf="message" class="alert mt-3" [ngClass]="{
+              'alert-success': messageType === 'success',
+              'alert-danger': messageType === 'error'
+            }">
+              {{ message }}
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <!-- Map/Image -->
+      <div class="col-lg-6 order-lg-1" data-aos="fade-right">
+        <div class="contact-image-wrap h-100">
+          <div
+            class="contact-image"
+            style="background-image: url('images/me3.png')"
+          ></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

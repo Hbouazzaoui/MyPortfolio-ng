@@ -27,7 +27,7 @@
 
 .carousel-indicators .active {
   opacity: 1;
-  background-color: #f4c430;
+  background-color: #55e6a5;
 }
 
 .text-content {
@@ -37,7 +37,7 @@
 
 .subheading {
   font-size: 1.5rem;
-  color: #f4c430;
+  color: #55e6a5;
   display: block;
   margin-bottom: 10px;
   font-weight: 500;
@@ -50,7 +50,7 @@ h1 {
 }
 
 h1 span {
-  color: #f4c430;
+  color: #55e6a5;
 }
 
 h2 {
@@ -60,7 +60,14 @@ h2 {
 }
 
 .hero-img {
-  width: 100%;
+  width: 85%;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.hero-img2 {
+  width: 80%;
   height: 100vh;
   background-size: cover;
   background-position: center;
@@ -68,8 +75,8 @@ h2 {
 }
 
 .btn-primary {
-  background-color: #f4c430;
-  border-color: #f4c430;
+  background-color: #55e6a5;
+  border-color: #55e6a5;
   color: #1a1a1a;
   font-weight: 600;
   padding: 10px 30px;
@@ -78,8 +85,8 @@ h2 {
 }
 
 .btn-primary:hover {
-  background-color: #e0b028;
-  border-color: #e0b028;
+  background-color: #55e6a5;
+  border-color: #55e6a5;
 }
 
 .btn-outline-light {

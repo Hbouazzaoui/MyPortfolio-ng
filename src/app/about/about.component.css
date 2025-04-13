@@ -1,14 +1,14 @@
 .about-section {
   background: #1a1a1a;
-  padding: 5rem 0;
+  /* padding: 5rem 0; */
   color: #fff;
-  min-height: 100vh;
+  min-height: 10vh;
   display: flex;
   align-items: center;
 }
 
 .about-img {
-  width: 100%;
+  width: 90%;
   height: 600px;
   background-size: cover;
   background-position: center;
@@ -21,13 +21,13 @@
 }
 
 .big {
-  position: absolute;
-  top: -4rem;
-  left: 0;
-  font-size: 8rem;
-  font-weight: 900;
-  color: rgba(255, 255, 255, 0.1);
-  z-index: 0;
+    position: relative;
+    top:  0rem;
+    left: -250px;
+    font-size: 8rem;
+    font-weight: 900;
+    color: rgba(255, 255, 255, 0.1);
+    z-index: 0;
 }
 
 h2 {
@@ -56,7 +56,7 @@ p {
 
 .about-info li span:first-child {
   font-weight: 600;
-  color: #f4c430;
+  color: #55e6a5;
   width: 120px;
 }
 
@@ -71,7 +71,7 @@ p {
 .number {
   font-size: 2.5rem;
   font-weight: 700;
-  color: #f4c430;
+  color: #55e6a5;
   display: inline-block;
   margin-right: 0.5rem;
 }
@@ -82,8 +82,8 @@ p {
 }
 
 .btn-primary {
-  background-color: #f4c430;
-  border-color: #f4c430;
+  background-color: #55e6a5;
+  border-color: #55e6a5;
   color: #1a1a1a;
   font-weight: 600;
   padding: 10px 30px;
@@ -92,8 +92,8 @@ p {
 }
 
 .btn-primary:hover {
-  background-color: #e0b028;
-  border-color: #e0b028;
+  background-color: #55e6a5;
+  border-color: #55e6a5;
 }
 
 @media (max-width: 992px) {
